@@ -1,0 +1,98 @@
+
+C:\Nazi\console>newman run "IC AUG 2021 New Billing order.postman_collection.json" -e "New Environment IC.postman_environment.json" -d local.csv 
+newman
+
+IC AUG 2021 New Billing order
+
+Iteration 1/3
+
+□ Billing order test
+└ Post
+  POST http://localhost:8080/BillingOrder [200 OK, 357B, 154ms]
+  √  Status code is 200
+  √  Response time is less than 00ms
+  √  Successful POST request
+  ┌
+  │ 16
+  └
+  √  Successful POST request
+
+└ Get
+  GET http://localhost:8080/BillingOrder/16 [200 OK, 357B, 25ms]
+
+└ Put
+  PUT http://localhost:8080/BillingOrder/16 [200 OK, 343B, 28ms]
+
+└ get single record/del
+  DELETE http://localhost:8080/BillingOrder/16 [200 OK, 75B, 19ms]
+
+└ Get all
+  GET http://localhost:8080/BillingOrder [200 OK, 372B, 8ms]
+
+Iteration 2/3
+
+└ Post
+  POST http://localhost:8080/BillingOrder [200 OK, 356B, 21ms]
+  √  Status code is 200
+  √  Response time is less than 00ms
+  √  Successful POST request
+  ┌
+  │ 17
+  └
+  √  Successful POST request
+
+└ Get
+  GET http://localhost:8080/BillingOrder/17 [200 OK, 356B, 23ms]
+
+└ Put
+  PUT http://localhost:8080/BillingOrder/17 [200 OK, 343B, 36ms]
+
+└ get single record/del
+  DELETE http://localhost:8080/BillingOrder/17 [200 OK, 75B, 12ms]
+
+└ Get all
+  GET http://localhost:8080/BillingOrder [200 OK, 372B, 9ms]
+
+Iteration 3/3
+
+└ Post
+  POST http://localhost:8080/BillingOrder [200 OK, 355B, 9ms]
+  √  Status code is 200
+  √  Response time is less than 00ms
+  √  Successful POST request
+  ┌
+  │ 18
+  └
+  √  Successful POST request
+
+└ Get
+  GET http://localhost:8080/BillingOrder/18 [200 OK, 355B, 21ms]
+
+└ Put
+  PUT http://localhost:8080/BillingOrder/18 [200 OK, 343B, 16ms]
+
+└ get single record/del
+  DELETE http://localhost:8080/BillingOrder/18 [200 OK, 75B, 18ms]
+
+└ Get all
+  GET http://localhost:8080/BillingOrder [200 OK, 372B, 8ms]
+
+┌─────────────────────────┬───────────────────┬──────────────────┐
+│                         │          executed │           failed │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│              iterations │                 3 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│                requests │                15 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│            test-scripts │                 3 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│      prerequest-scripts │                 3 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│              assertions │                12 │                0 │
+├─────────────────────────┴───────────────────┴──────────────────┤
+│ total run duration: 1837ms                                     │
+├────────────────────────────────────────────────────────────────┤
+│ total data received: 2.66KB (approx)                           │
+├────────────────────────────────────────────────────────────────┤
+│ average response time: 27ms [min: 8ms, max: 154ms, s.d.: 34ms] │
+└────────────────────────────────────────────────────────────────┘
